@@ -14,7 +14,7 @@ function App() {
 
   const fetchData = async() => {
     try {
-      const res = await fetch(process.env.API_URL);
+      const res = await fetch(process.env.REACT_APP_API_URL);
       const data = await res.json();
       setData(data.data);
     } catch (error) {
